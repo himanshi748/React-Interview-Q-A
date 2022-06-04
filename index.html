@@ -217,11 +217,19 @@
       Props drilling is basically a situation in the same data is been sent to
       sent it almost every due to the requirement in the final level.
       <br />
+      <br/>
+      PD is the unofficial term for passing data through several nested childen components, in a bid to deliver this data to a deepley nested component..<br/>the problem with this approach is that most of the component through which data is passed have no actual need for this data.
+      <br/>
+      this is simpilyused as mdium for transporting this data to its destination component.
+      <br>
+      <br/>
       when we have to share the same data across multiple child components then
       define the data into the paraent every component in react has its own
       state because of these data can be reabundant and inconsistant so by
       liftingup the stae of the parent component as a single source of the truth
       and pass the data of the children in its parent.
+      <br/><br/>
+      In React , sharing state is accomplished by moving it up to the closest common ancestor of the components that need it .this is called "lifting state up".
     </div>
 
     <br /><br />
@@ -246,6 +254,50 @@
       .it allow changing the browser URL.<br />
       React Router plays an important role to display multiple views in a single
       page application
+    </div>
+
+    <br /><br />
+
+    <h3>14 . How to create Reusable components in React?</h3>
+    <div>
+      <ul>
+        <li>through the props method</li>
+        <li>using parent components</li>
+      </ul>
+    </div>
+
+    <br /><br />
+
+    <h3>15 . What are the three principles that Redux follows?</h3>
+    <div>
+      <ul>
+        <li>single source of truth</li>
+        <li>state is read only</li>
+        <li>changes are made with pure functions</li>
+      </ul>
+    </div>
+
+    <br /><br />
+
+    <h3>16 . Explain difference between Browser Route, Route, Routes</h3>
+    <div>
+      <ul>
+        <li>
+          browser router-BrowserRouter is a router implementation that uses the
+          HTML5 history API to keep our UI in sync with the url. It is the
+          parent component that is used to store all the other components.
+        </li>
+        <li>
+          Routes- It is the new component introduced in the V6 and a upgrade of
+          a component. It is used to group all the route if there are more than
+          1 route components and routes are chosen based on best match.
+        </li>
+        <li>
+          Route- it is the conditionally shown component that renders some ui
+          when path is matched to current url
+        </li>
+      </ul>
+      <br />
     </div>
 
     <br /><br />
